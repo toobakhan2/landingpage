@@ -1,0 +1,24 @@
+.btn-flip {
+    @apply opacity-100 relative inline-block;
+}
+.btn-flip:hover .front {
+    @apply opacity-100;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover .back {
+    @apply opacity-0;
+    transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip .front {
+    @apply opacity-0 w-full -top-0 left-0 block absolute text-white px-10 py-3;
+    transition: 0.5s;
+    @apply bg-dark-green;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip .back {
+    @apply bg-light-green block text-white opacity-100 relative top-0 left-0 px-10 py-3;
+    transition: 0.5s;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
