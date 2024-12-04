@@ -3,7 +3,15 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Ensure this is imported
 import Style from './FlipButton.module.css';
 
-export default function FlipButton({ link, text, icon, onClick, isLink = true, className = '' }) {
+// Example usage: <FlipButton className="icon-right" />
+export default function FlipButton({
+  link = '#',
+  text,
+  icon,
+  onClick = () => {},
+  isLink = true,
+  className = '',
+}) {
   const content = (
     <>
       <span className={Style['front']}>
@@ -41,11 +49,4 @@ FlipButton.propTypes = {
   onClick: PropTypes.func,
   isLink: PropTypes.bool,
   className: PropTypes.string,
-};
-
-FlipButton.defaultProps = {
-  link: '#',
-  onClick: () => {},
-  isLink: true,
-  className: '',
 };

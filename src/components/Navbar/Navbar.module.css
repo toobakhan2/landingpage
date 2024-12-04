@@ -1,0 +1,12 @@
+.row{
+    @apply flex items-center flex-wrap justify-between;
+}
+.header-logo{
+    @apply w-1/4;
+}
+.menuList{
+    @apply items-center flex justify-end space-x-8 ;
+}
+.menuList a{
+    @apply text-white text-lg hover:text-light-green ; 
+}

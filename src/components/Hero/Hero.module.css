@@ -1,0 +1,33 @@
+.hero{
+    
+    background-image: url(../../assets/hero.jpg);
+    @apply bg-cover bg-center relative bg-no-repeat pt-32 pb-48; 
+  
+}
+.row{
+    @apply flex items-center flex-wrap justify-center;
+}
+.leftCol , .rightCol{
+    @apply w-3/6
+}
+.leftColwrap{
+    @apply max-w-full w-96 text-white ; 
+}
+.rightCol {
+    background-image: url(../../assets/shape__1_-removebg-preview.png);
+    background-size: contain;
+    @apply bg-contain ;
+    background-position:65%;
+    background-repeat: no-repeat;
+}
+.rightImg{
+    @apply w-4/5 ml-auto;
+    -webkit-mask-image: url(../../assets/shape__1_-removebg-preview.png);
+    webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat:no-repeat;
+}
+.customSvg{
+    @apply absolute bottom-0 left-0 right-0 ;
+}
