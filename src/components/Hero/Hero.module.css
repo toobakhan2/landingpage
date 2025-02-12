@@ -31,3 +31,9 @@
 .customSvg{
     @apply absolute bottom-0 left-0 right-0 ;
 }
+.logoWrapper{
+    @apply flex items-center overflow-hidden;
+}
+.logoItem{
+    @apply flex-shrink-0 w-2/6 flex justify-center ;
+}

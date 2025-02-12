@@ -1,10 +1,18 @@
 import React from 'react'
 import Style from './Hero.module.css';
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
-import RightImg from '../../assets/rightimg.webp'
+import RightImg from '../../assets/rightimg.webp';
+import Logo1 from '../../assets/logo1.svg';
+import Logo2 from '../../assets/logo2.svg';
+import Logo3 from '../../assets/logo3.svg';
+import Logo4 from '../../assets/logo4.png';
+import Logo5 from '../../assets/logo5.svg';
+import Logo6 from '../../assets/logo6.svg';
+
 import FlipButton from '../Common/Flipbutton/FlipButton';
 export default function Hero() {
   return (
+    <>
     <section className={Style.hero}>
       <div className="container mx-auto">
         <div className={Style.row}>
@@ -16,13 +24,35 @@ export default function Hero() {
                 </div>
             </div>
             <div className={Style.rightCol}>
-                <img src={RightImg} className={Style.rightImg} />
+                <img src={RightImg} className={Style.rightImg} alt="right img"/>
             </div>
         </div>
       </div>
-      <svg className={Style.customSvg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#f3f4f6" d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,165.3C672,160,768,160,864,170.7C960,181,1056,203,1152,186.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-  </svg>
     </section>
+    <section className={Style.logoSection} >
+      <div className={Style.logoWrapper}>
+        {/* item 1 */}
+        <div className={Style.logoItem}>
+          <img src={Logo1} alt="logo-img"/>
+        </div>
+        {/* item 2 */}
+        <div className={Style.logoItem}>
+          <img src={Logo2} alt="logo-img"/>
+        </div>
+        {/* item 4 */}
+        <div className={Style.logoItem}>
+          <img src={Logo4} alt="logo-img"/>
+        </div>
+        {/* item 5 */}
+        <div className={Style.logoItem}>
+          <img src={Logo5} alt="logo-img"/>
+        </div>
+        {/* item 6 */}
+        <div className={Style.logoItem}>
+          <img src={Logo6} alt="logo-img"/>
+        </div>
+      </div>
+    </section>
+    </>
   )
 }
