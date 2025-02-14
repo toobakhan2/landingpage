@@ -35,5 +35,9 @@
     @apply flex items-center overflow-hidden;
 }
 .logoItem{
-    @apply flex-shrink-0 w-2/6 flex justify-center ;
+ 
+    @apply flex-shrink-0 w-1/5 flex justify-center ;
+}
+.logoItem img{
+    @apply w-3/5;
 }
