@@ -51,6 +51,10 @@ export default function Hero() {
         <div className={Style.logoItem}>
           <img src={Logo6} alt="logo-img"/>
         </div>
+        {/* item 7 */}
+        <div className={Style.logoItem}>
+          <img src={Logo3} alt="logo-img"/>
+        </div>
       </div>
     </section>
     </>
